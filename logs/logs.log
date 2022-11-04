@@ -1,0 +1,376 @@
+{
+  meta: {
+    error: MongoServerError: E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }
+        at C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\operations\insert.js:53:33
+        at C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\cmap\connection_pool.js:308:25
+        at C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\sdam\server.js:213:17
+        at handleOperationResult (C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\sdam\server.js:329:20)
+        at Connection.onMessage (C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\cmap\connection.js:219:9)
+        at MessageStream.<anonymous> (C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\cmap\connection.js:60:60)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+        at MessageStream._write (C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\cmap\message_stream.js:33:9) {
+      [stack]: 'MongoServerError: E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }\n' +
+        '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\operations\\insert.js:53:33\n' +
+        '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js:308:25\n' +
+        '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js:213:17\n' +
+        '    at handleOperationResult (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js:329:20)\n' +
+        '    at Connection.onMessage (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js:219:9)\n' +
+        '    at MessageStream.<anonymous> (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js:60:60)\n' +
+        '    at MessageStream.emit (events.js:400:28)\n' +
+        '    at MessageStream.emit (domain.js:475:12)\n' +
+        '    at processIncomingData (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:132:20)\n' +
+        '    at MessageStream._write (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:33:9)',
+      [message]: 'E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }',
+      index: 0,
+      code: 11000,
+      keyPattern: { userName: 1 },
+      keyValue: { userName: 'u003' },
+      [Symbol(errorLabels)]: Set(0) {},
+      [name]: [Getter],
+      [errmsg]: [Getter],
+      [errorLabels]: [Getter]
+    },
+    level: 'error',
+    message: 'uncaughtException: E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }\n' +
+      'MongoServerError: E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }\n' +
+      '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\operations\\insert.js:53:33\n' +
+      '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js:308:25\n' +
+      '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js:213:17\n' +
+      '    at handleOperationResult (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js:329:20)\n' +
+      '    at Connection.onMessage (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js:219:9)\n' +
+      '    at MessageStream.<anonymous> (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js:60:60)\n' +
+      '    at MessageStream.emit (events.js:400:28)\n' +
+      '    at MessageStream.emit (domain.js:475:12)\n' +
+      '    at processIncomingData (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:132:20)\n' +
+      '    at MessageStream._write (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:33:9)',
+    stack: 'MongoServerError: E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }\n' +
+      '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\operations\\insert.js:53:33\n' +
+      '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js:308:25\n' +
+      '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js:213:17\n' +
+      '    at handleOperationResult (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js:329:20)\n' +
+      '    at Connection.onMessage (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js:219:9)\n' +
+      '    at MessageStream.<anonymous> (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js:60:60)\n' +
+      '    at MessageStream.emit (events.js:400:28)\n' +
+      '    at MessageStream.emit (domain.js:475:12)\n' +
+      '    at processIncomingData (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:132:20)\n' +
+      '    at MessageStream._write (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:33:9)',
+    exception: true,
+    date: 'Fri Nov 04 2022 14:28:43 GMT+0100 (Central European Standard Time)',
+    process: {
+      pid: 16236,
+      uid: null,
+      gid: null,
+      cwd: 'C:\\Arteco Global\\Advance backend\\parcel',
+      execPath: 'C:\\Users\\Raihan Uddin\\AppData\\Local\\Volta\\tools\\image\\node\\14.20.1\\node.exe',
+      version: 'v14.20.1',
+      argv: [
+        'C:\\Users\\Raihan Uddin\\AppData\\Local\\Volta\\tools\\image\\node\\14.20.1\\node.exe',
+        'C:\\Arteco Global\\Advance backend\\parcel\\index.js',
+        [length]: 2
+      ],
+      memoryUsage: {
+        rss: 129437696,
+        heapTotal: 87334912,
+        heapUsed: 62267016,
+        external: 47231784,
+        arrayBuffers: 44657169
+      }
+    },
+    os: { loadavg: [ 0, 0, 0, [length]: 3 ], uptime: 96227 },
+    trace: [
+      {
+        column: 33,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\operations\\insert.js',
+        function: null,
+        line: 53,
+        method: null,
+        native: false
+      },
+      {
+        column: 25,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js',
+        function: null,
+        line: 308,
+        method: null,
+        native: false
+      },
+      {
+        column: 17,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js',
+        function: null,
+        line: 213,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js',
+        function: 'handleOperationResult',
+        line: 329,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js',
+        function: 'Connection.onMessage',
+        line: 219,
+        method: 'onMessage',
+        native: false
+      },
+      {
+        column: 60,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js',
+        function: null,
+        line: 60,
+        method: null,
+        native: false
+      },
+      {
+        column: 28,
+        file: 'events.js',
+        function: 'MessageStream.emit',
+        line: 400,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'domain.js',
+        function: 'MessageStream.emit',
+        line: 475,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 20,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js',
+        function: 'processIncomingData',
+        line: 132,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js',
+        function: 'MessageStream._write',
+        line: 33,
+        method: '_write',
+        native: false
+      },
+      [length]: 10
+    ],
+    req: {
+      url: '/users',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.2',
+        accept: '*/*',
+        'postman-token': 'd202fd59-0e5c-41e6-9617-234325442113',
+        host: 'localhost:8000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '29',
+        'x-correlation-id': '1667568523565'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/users',
+      query: {},
+      body: { userName: 'u003', createdAt: 2022-11-04T13:28:43.567Z }
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2022-11-04T13:28:43.597Z',
+}
+{
+  meta: {
+    error: MongoServerError: E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }
+        at C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\operations\insert.js:53:33
+        at C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\cmap\connection_pool.js:308:25
+        at C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\sdam\server.js:213:17
+        at handleOperationResult (C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\sdam\server.js:329:20)
+        at Connection.onMessage (C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\cmap\connection.js:219:9)
+        at MessageStream.<anonymous> (C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\cmap\connection.js:60:60)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\cmap\message_stream.js:132:20)
+        at MessageStream._write (C:\Arteco Global\Advance backend\parcel\node_modules\mongodb\lib\cmap\message_stream.js:33:9) {
+      [stack]: 'MongoServerError: E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }\n' +
+        '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\operations\\insert.js:53:33\n' +
+        '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js:308:25\n' +
+        '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js:213:17\n' +
+        '    at handleOperationResult (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js:329:20)\n' +
+        '    at Connection.onMessage (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js:219:9)\n' +
+        '    at MessageStream.<anonymous> (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js:60:60)\n' +
+        '    at MessageStream.emit (events.js:400:28)\n' +
+        '    at MessageStream.emit (domain.js:475:12)\n' +
+        '    at processIncomingData (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:132:20)\n' +
+        '    at MessageStream._write (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:33:9)',
+      [message]: 'E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }',
+      index: 0,
+      code: 11000,
+      keyPattern: { userName: 1 },
+      keyValue: { userName: 'u003' },
+      [Symbol(errorLabels)]: Set(0) {},
+      [name]: [Getter],
+      [errmsg]: [Getter],
+      [errorLabels]: [Getter]
+    },
+    level: 'error',
+    message: 'uncaughtException: E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }\n' +
+      'MongoServerError: E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }\n' +
+      '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\operations\\insert.js:53:33\n' +
+      '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js:308:25\n' +
+      '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js:213:17\n' +
+      '    at handleOperationResult (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js:329:20)\n' +
+      '    at Connection.onMessage (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js:219:9)\n' +
+      '    at MessageStream.<anonymous> (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js:60:60)\n' +
+      '    at MessageStream.emit (events.js:400:28)\n' +
+      '    at MessageStream.emit (domain.js:475:12)\n' +
+      '    at processIncomingData (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:132:20)\n' +
+      '    at MessageStream._write (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:33:9)',
+    stack: 'MongoServerError: E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }\n' +
+      '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\operations\\insert.js:53:33\n' +
+      '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js:308:25\n' +
+      '    at C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js:213:17\n' +
+      '    at handleOperationResult (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js:329:20)\n' +
+      '    at Connection.onMessage (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js:219:9)\n' +
+      '    at MessageStream.<anonymous> (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js:60:60)\n' +
+      '    at MessageStream.emit (events.js:400:28)\n' +
+      '    at MessageStream.emit (domain.js:475:12)\n' +
+      '    at processIncomingData (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:132:20)\n' +
+      '    at MessageStream._write (C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:33:9)',
+    exception: true,
+    date: 'Fri Nov 04 2022 14:29:02 GMT+0100 (Central European Standard Time)',
+    process: {
+      pid: 3132,
+      uid: null,
+      gid: null,
+      cwd: 'C:\\Arteco Global\\Advance backend\\parcel',
+      execPath: 'C:\\Users\\Raihan Uddin\\AppData\\Local\\Volta\\tools\\image\\node\\14.20.1\\node.exe',
+      version: 'v14.20.1',
+      argv: [
+        'C:\\Users\\Raihan Uddin\\AppData\\Local\\Volta\\tools\\image\\node\\14.20.1\\node.exe',
+        'C:\\Arteco Global\\Advance backend\\parcel\\index.js',
+        [length]: 2
+      ],
+      memoryUsage: {
+        rss: 129961984,
+        heapTotal: 87252992,
+        heapUsed: 61495672,
+        external: 47118430,
+        arrayBuffers: 44543815
+      }
+    },
+    os: { loadavg: [ 0, 0, 0, [length]: 3 ], uptime: 96245 },
+    trace: [
+      {
+        column: 33,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\operations\\insert.js',
+        function: null,
+        line: 53,
+        method: null,
+        native: false
+      },
+      {
+        column: 25,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection_pool.js',
+        function: null,
+        line: 308,
+        method: null,
+        native: false
+      },
+      {
+        column: 17,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js',
+        function: null,
+        line: 213,
+        method: null,
+        native: false
+      },
+      {
+        column: 20,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\sdam\\server.js',
+        function: 'handleOperationResult',
+        line: 329,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js',
+        function: 'Connection.onMessage',
+        line: 219,
+        method: 'onMessage',
+        native: false
+      },
+      {
+        column: 60,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\connection.js',
+        function: null,
+        line: 60,
+        method: null,
+        native: false
+      },
+      {
+        column: 28,
+        file: 'events.js',
+        function: 'MessageStream.emit',
+        line: 400,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 12,
+        file: 'domain.js',
+        function: 'MessageStream.emit',
+        line: 475,
+        method: 'emit',
+        native: false
+      },
+      {
+        column: 20,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js',
+        function: 'processIncomingData',
+        line: 132,
+        method: null,
+        native: false
+      },
+      {
+        column: 9,
+        file: 'C:\\Arteco Global\\Advance backend\\parcel\\node_modules\\mongodb\\lib\\cmap\\message_stream.js',
+        function: 'MessageStream._write',
+        line: 33,
+        method: '_write',
+        native: false
+      },
+      [length]: 10
+    ],
+    req: {
+      url: '/users',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.2',
+        accept: '*/*',
+        'postman-token': '7bfbc93b-e2ce-4af7-afdc-de3cc5c674e3',
+        host: 'localhost:8000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '29',
+        'x-correlation-id': '1667568542325'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/users',
+      query: {},
+      body: { userName: 'u003', createdAt: 2022-11-04T13:29:02.327Z }
+    }
+  },
+  level: 'error',
+  message: 'middlewareError',
+  timestamp: '2022-11-04T13:29:02.364Z'
+}

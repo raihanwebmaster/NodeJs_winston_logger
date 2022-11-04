@@ -1,0 +1,342 @@
+{
+  meta: {
+    req: {
+      url: '/users',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.29.2',
+        accept: '*/*',
+        'postman-token': '90a74d72-9db8-414e-8380-50beb10fb3c9',
+        host: 'localhost:8000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'x-correlation-id': '1667561809291'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/users',
+      query: {}
+    },
+    res: {
+      statusCode: 200,
+      body: [
+        {
+          _id: '635bab1d390325ef6dd380aa',
+          userName: 'u003',
+          createAt: '2022-10-28T10:12:45.759Z',
+          __v: 0
+        },
+        [length]: 1
+      ]
+    },
+    responseTime: 11
+  },
+  level: 'info',
+  message: 'HTTP GET /users',
+  timestamp: '2022-11-04T11:36:49.307Z'
+}
+{
+  meta: {
+    req: {
+      url: '/users',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.2',
+        accept: '*/*',
+        'postman-token': '9380e067-6aba-40a0-a7e6-cce4da0d26b2',
+        host: 'localhost:8000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '29',
+        'x-correlation-id': '1667562179798'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/users',
+      query: {},
+      body: { userName: 'u003', createdAt: 2022-11-04T11:42:59.800Z }
+    },
+    res: {
+      statusCode: 500,
+      body: {
+        correlationId: '1667562179798',
+        message: 'E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }'
+      }
+    },
+    responseTime: 14
+  },
+  level: 'error',
+  message: 'HTTP POST /users',
+  timestamp: '2022-11-04T11:42:59.812Z'
+}
+{
+  meta: {
+    req: {
+      url: '/users',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.2',
+        accept: '*/*',
+        'postman-token': 'b7ed935f-8156-4ab5-bdc6-91a33cf5f4e3',
+        host: 'localhost:8000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '29',
+        'x-correlation-id': '1667567334307'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/users',
+      query: {},
+      body: { userName: 'u003', createdAt: 2022-11-04T13:08:54.310Z }
+    },
+    res: {
+      statusCode: 500,
+      body: {
+        correlationId: '1667567334307',
+        message: 'options.winstonInstance.log is not a function'
+      }
+    },
+    responseTime: 39
+  },
+  level: 'error',
+  message: 'HTTP POST /users',
+  timestamp: '2022-11-04T13:08:54.349Z'
+}
+{
+  meta: {
+    req: {
+      url: '/users',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.2',
+        accept: '*/*',
+        'postman-token': 'a92d5fcc-c979-41f2-a12f-8f3398a0b8d0',
+        host: 'localhost:8000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '29',
+        'x-correlation-id': '1667567394044'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/users',
+      query: {},
+      body: { userName: 'u003', createdAt: 2022-11-04T13:09:54.045Z }
+    },
+    res: {
+      statusCode: 500,
+      body: {
+        correlationId: '1667567394044',
+        message: 'E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }'
+      }
+    },
+    responseTime: 48
+  },
+  level: 'error',
+  message: 'HTTP POST /users',
+  timestamp: '2022-11-04T13:09:54.094Z'
+}
+{
+  meta: {
+    req: {
+      url: '/users',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.2',
+        accept: '*/*',
+        'postman-token': '11867ed7-8589-433e-b168-b5ea384f8f2b',
+        host: 'localhost:8000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '29',
+        'x-correlation-id': '1667567445476'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/users',
+      query: {},
+      body: { userName: 'u003', createdAt: 2022-11-04T13:10:45.476Z }
+    },
+    res: {
+      statusCode: 500,
+      body: {
+        correlationId: '1667567445476',
+        message: 'E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }'
+      }
+    },
+    responseTime: 21
+  },
+  level: 'error',
+  message: 'HTTP POST /users',
+  timestamp: '2022-11-04T13:10:45.498Z'
+}
+{
+  meta: {
+    req: {
+      url: '/users',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.2',
+        accept: '*/*',
+        'postman-token': '4152c45a-e294-4418-8694-e8937a82c201',
+        host: 'localhost:8000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '29',
+        'x-correlation-id': '1667568375701'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/users',
+      query: {},
+      body: { userName: 'u003', createdAt: 2022-11-04T13:26:15.703Z }
+    },
+    res: {
+      statusCode: 500,
+      body: {
+        correlationId: '1667568375701',
+        message: 'E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }'
+      }
+    },
+    responseTime: 43
+  },
+  level: 'error',
+  message: 'HTTP POST /users',
+  timestamp: '2022-11-04T13:26:15.746Z'
+}
+{
+  meta: {
+    req: {
+      url: '/users',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.2',
+        accept: '*/*',
+        'postman-token': '07d47b2f-da68-4604-9a99-64836cf5d873',
+        host: 'localhost:8000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '29',
+        'x-correlation-id': '1667568456341'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/users',
+      query: {},
+      body: { userName: 'u003', createdAt: 2022-11-04T13:27:36.343Z }
+    },
+    res: {
+      statusCode: 500,
+      body: {
+        correlationId: '1667568456341',
+        message: 'E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }'
+      }
+    },
+    responseTime: 44
+  },
+  level: 'error',
+  message: 'HTTP POST /users',
+  timestamp: '2022-11-04T13:27:36.387Z'
+}
+{
+  meta: {
+    req: {
+      url: '/users',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.2',
+        accept: '*/*',
+        'postman-token': '7689c5c9-71ce-4f80-a34f-963b4208428b',
+        host: 'localhost:8000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '29',
+        'x-correlation-id': '1667568494752'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/users',
+      query: {},
+      body: { userName: 'u003', createdAt: 2022-11-04T13:28:14.753Z }
+    },
+    res: {
+      statusCode: 500,
+      body: {
+        correlationId: '1667568494752',
+        message: 'E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }'
+      }
+    },
+    responseTime: 41
+  },
+  level: 'error',
+  message: 'HTTP POST /users',
+  timestamp: '2022-11-04T13:28:14.795Z'
+}
+{
+  meta: {
+    req: {
+      url: '/users',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.2',
+        accept: '*/*',
+        'postman-token': 'd202fd59-0e5c-41e6-9617-234325442113',
+        host: 'localhost:8000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '29',
+        'x-correlation-id': '1667568523565'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/users',
+      query: {},
+      body: { userName: 'u003', createdAt: 2022-11-04T13:28:43.567Z }
+    },
+    res: {
+      statusCode: 500,
+      body: {
+        correlationId: '1667568523565',
+        message: 'E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }'
+      }
+    },
+    responseTime: 37
+  },
+  level: 'error',
+  message: 'HTTP POST /users',
+  timestamp: '2022-11-04T13:28:43.604Z'
+}
+{
+  meta: {
+    req: {
+      url: '/users',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.29.2',
+        accept: '*/*',
+        'postman-token': '7bfbc93b-e2ce-4af7-afdc-de3cc5c674e3',
+        host: 'localhost:8000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '29',
+        'x-correlation-id': '1667568542325'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/users',
+      query: {},
+      body: { userName: 'u003', createdAt: 2022-11-04T13:29:02.327Z }
+    },
+    res: {
+      statusCode: 500,
+      body: {
+        correlationId: '1667568542325',
+        message: 'E11000 duplicate key error collection: parcel.users index: userName_1 dup key: { userName: "u003" }'
+      }
+    },
+    responseTime: 44
+  },
+  level: 'error',
+  message: 'HTTP POST /users',
+  timestamp: '2022-11-04T13:29:02.371Z'
+}
